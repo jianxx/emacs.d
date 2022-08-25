@@ -111,6 +111,8 @@
 (autoload 'shenshou-logout-now "shenshou" "" t)
 (autoload 'my-chinese-sort-words "my-chinese" "" t)
 (autoload 'my-chinese-compare "my-chinese" "" t)
+(autoload 'bazel "bazel" "" t)
+(autoload 'recentf "recentf" "" t)
 
 (provide 'init-autoload)
 ;;; init-autoload.el ends here

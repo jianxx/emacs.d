@@ -163,23 +163,23 @@
       '(
         ;; uncomment below line if you need use GNU ELPA
         ;; ("gnu" . "https://elpa.gnu.org/packages/")
-        ("melpa" . "https://melpa.org/packages/")
-        ("melpa-stable" . "https://stable.melpa.org/packages/")
+        ;; ("melpa" . "https://melpa.org/packages/")
+        ;; ("melpa-stable" . "https://stable.melpa.org/packages/")
 
         ;; Use either 163 or tsinghua mirror repository when official melpa
         ;; is slow or shutdown.
 
         ;; ;; {{ Option 1: 163 mirror repository:
         ;; ;; ("gnu" . "https://mirrors.163.com/elpa/gnu/")
-        ;; ("melpa" . "https://mirrors.163.com/elpa/melpa/")
-        ;; ("melpa-stable" . "https://mirrors.163.com/elpa/stable-melpa/")
+        ("melpa" . "https://mirrors.163.com/elpa/melpa/")
+        ("melpa-stable" . "https://mirrors.163.com/elpa/stable-melpa/")
         ;; ;; }}
 
         ;; ;; {{ Option 2: tsinghua mirror repository
         ;; ;; @see https://mirror.tuna.tsinghua.edu.cn/help/elpa/ on usage:
-        ;; ;; ("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
-        ;; ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
-        ;; ("melpa-stable" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/stable-melpa/")
+        ("gnu-tsinghua"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+        ("melpa-tsinghua" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+        ("melpa-stable-tsinghua" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/stable-melpa/")
         ;; }}
         ))
 
@@ -367,7 +367,10 @@ If NO-REFRESH is nil, `package-refresh-contents' is called."
 (require-package 'pyim-wbdict) ; someone may use wubi IME, not me
 (require-package 'pyim-basedict)
 (require-package 'esup)
-
+(require-package 'protobuf-mode)
+(require-package 'vc-msg)
+;; Python
+(require-package 'elpy)
 ;; {{ Fixed expiring GNU ELPA keys
 ;; GNU ELPA GPG key will expire on Sep-2019. So we need install this package to
 ;; update key or else users can't install packages from GNU ELPA.
